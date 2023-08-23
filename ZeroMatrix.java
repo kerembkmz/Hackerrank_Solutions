@@ -20,7 +20,7 @@ parallel to the original matrix, otherwise, everything becomes 0.
 
 */
 
-public class InterviewTemplate{
+public class ZeroMatrix{
 
 		
 
