@@ -39,10 +39,30 @@ public class SingleLinkedList<T> {
             current = current.next;
         }
 
-        if (current.next != null) {
+        if (current.next!= null) {
             current.next = current.next.next;
             size--;
         }
+    }
+
+    public void removeMiddle(T data) {
+        if (head == null){
+            return;
+        }
+        if (head.data.equals(data)){
+            return;
+        }
+
+        Node<T> current = head;
+        while(current.next.next != null && !current.next.data.equals(data)){
+            current = current.next;
+        }
+
+        if (current.next.next != null){
+            current.next = current.next.next;
+            size--;
+        }
+
     }
 
     public int getSize() {

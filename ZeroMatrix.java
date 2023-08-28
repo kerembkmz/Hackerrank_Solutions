@@ -1,5 +1,3 @@
-import java.util.*;
-
 /*
 
 Cracking the coding interview, Interview Questions 1.8
